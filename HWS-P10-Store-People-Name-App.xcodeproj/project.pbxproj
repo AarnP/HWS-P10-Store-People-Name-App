@@ -13,6 +13,8 @@
 		F7351D032993674700A9A659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7351D012993674700A9A659 /* Main.storyboard */; };
 		F7351D052993674900A9A659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7351D042993674900A9A659 /* Assets.xcassets */; };
 		F7351D082993674900A9A659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7351D062993674900A9A659 /* LaunchScreen.storyboard */; };
+		F7351D122993748700A9A659 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7351D112993748700A9A659 /* PersonCell.swift */; };
+		F7351D1429948BEA00A9A659 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7351D1329948BEA00A9A659 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F7351D042993674900A9A659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7351D072993674900A9A659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7351D092993674900A9A659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7351D112993748700A9A659 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		F7351D1329948BEA00A9A659 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				F7351CFB2993674700A9A659 /* AppDelegate.swift */,
 				F7351CFD2993674700A9A659 /* SceneDelegate.swift */,
-				F7351CFF2993674700A9A659 /* ViewController.swift */,
-				F7351D012993674700A9A659 /* Main.storyboard */,
+				F7351D1529948BF000A9A659 /* Model */,
+				F7351D102993685400A9A659 /* Views */,
+				F7351D0F2993684700A9A659 /* Controllers */,
 				F7351D042993674900A9A659 /* Assets.xcassets */,
 				F7351D062993674900A9A659 /* LaunchScreen.storyboard */,
 				F7351D092993674900A9A659 /* Info.plist */,
 			);
 			path = "HWS-P10-Store-People-Name-App";
+			sourceTree = "<group>";
+		};
+		F7351D0F2993684700A9A659 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7351CFF2993674700A9A659 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F7351D102993685400A9A659 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7351D012993674700A9A659 /* Main.storyboard */,
+				F7351D112993748700A9A659 /* PersonCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7351D1529948BF000A9A659 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7351D1329948BEA00A9A659 /* Person.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7351D1429948BEA00A9A659 /* Person.swift in Sources */,
 				F7351D002993674700A9A659 /* ViewController.swift in Sources */,
 				F7351CFC2993674700A9A659 /* AppDelegate.swift in Sources */,
+				F7351D122993748700A9A659 /* PersonCell.swift in Sources */,
 				F7351CFE2993674700A9A659 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
